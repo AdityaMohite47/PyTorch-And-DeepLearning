@@ -40,9 +40,9 @@ def plot_decision_boundary(model: torch.nn.Module, X: torch.Tensor, y: torch.Ten
 
     Source - https://madewithml.com/courses/foundations/neural-networks/ (with modifications)
     """
-    # Put everything to CPU (works better with NumPy + Matplotlib)
-    model.to("cpu")
-    X, y = X.to("cpu"), y.to("cpu")
+    # # Put everything to CPU (works better with NumPy + Matplotlib)
+    # model.to("cpu")
+    # X, y = X.to("cpu"), y.to("cpu")
 
     # Setup prediction boundaries and grid
     x_min, x_max = X[:, 0].min() - 0.1, X[:, 0].max() + 0.1
